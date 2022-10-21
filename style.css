@@ -1,0 +1,98 @@
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url(./fonts/Gilroy-Medium.ttf);
+
+    font-family: "Gilroy-SemiBold";
+    src: url(./fonts/Gilroy-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #161616;
+}
+
+#main__overlay-green {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #14cf93;
+    /* animation: slideUp 1s ease-out 2s 1 forwards; */
+}
+
+#main__overlay-white {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 0vh;
+    background-color: #fcfaf8;
+    /* animation: slideUp 1.2s ease-out 2.2s 1 forwards; */
+}
+
+#main__overlay-white #heading-1 {
+    position: absolute;
+    top: 35%;
+    left: 12%;
+    transform: translate(-12%, -40%);
+    font-size: 10vw;
+    color: #161616;
+}
+
+#main__overlay-white #heading-2 {
+    position: absolute;
+    top: 60%;
+    right: 5%;
+    transform: translate(-10%, -50%);
+    font-size: 10vw;
+    color: #161616;
+}
+
+.parent {
+    display: block;
+    overflow: hidden;
+    /* background-color: yellow; */
+}
+
+.child {
+    display: block;
+    font-family: 'Gilroy-SemiBold', sans-serif;
+    font-size: 11.5vw;
+    font-weight: 500;
+    transform: translateY(100%);
+    /* animation: up 1s ease-out 3s 1 forwards; */
+}
+
+@keyframes up {
+    0% {
+        transform: translateY(100%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100vh;
+    }
+}
