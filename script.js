@@ -21,9 +21,42 @@ document.querySelectorAll(".reveal").forEach((el) => {
 
 // GSAP Animations
 
-const tl = gsap.timeline();
+const tl1 = gsap.timeline();
 
-tl.to("#main", { 
+tl1.to("#sheikh", {
+    duration: 1,
+    x: 0,
+    ease: Expo.easeInOut,
+})
+.to("#is", {
+    duration: 1,
+    x: 0,
+    ease: Expo.easeInOut,
+    delay: -1
+})
+.to("#a", {
+    duration: 1,
+    x: 0,
+    ease: Expo.easeInOut,
+    delay: -1
+})
+.to("#intro-name", {
+    duration: 1,
+    y: -100,
+    ease: Expo.easeInOut,
+})
+.to(".goUp", {
+    duration: 1,
+    y: -100,
+    delay: -1,
+    ease: Expo.easeInOut,
+})
+
+
+
+const tl2 = gsap.timeline();
+
+tl2.to("#main", { 
     height: 0,
     duration: 2,
     delay: 1.1,
