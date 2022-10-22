@@ -101,6 +101,7 @@ html, body {
     bottom: 0;
     width: 100%;
     background-color: #14cf93;
+    overflow: hidden;
     /* animation: slideUp 1s ease-out 2s 1 forwards; */
 }
 
@@ -110,6 +111,7 @@ html, body {
     width: 100%;
     height: 0vh;
     background-color: #fcfaf8;
+    overflow: hidden;
     /* animation: slideUp 1.2s ease-out 2.2s 1 forwards; */
 }
 
@@ -145,6 +147,30 @@ html, body {
     transform: translateY(100%);
     /* animation: up 1s ease-out 3s 1 forwards; */
 }
+
+@media screen and (max-width: 768px) {
+    #main #top-text .dp {
+        font-size: 2.5vw;
+        letter-spacing: 0.5vw;
+    }
+
+    #main #text-container {
+        font-size: 4vw;
+    }
+
+    .child {
+        font-family: 'Gilroy-SemiBold', sans-serif;
+        font-weight: 700;
+        font-size: 15vw;
+    }
+    
+}
+
+
+
+
+
+/* Experimental Styling Codes */
 
 @keyframes up {
     0% {

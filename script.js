@@ -64,18 +64,19 @@ tl2.to("#main", {
 })
 .to("#main__overlay-green", {
     height: "100vh",
-    duration: 2,
-    delay: -2,
-    ease: Expo.easeInOut
+    duration: 1.1,
+    delay: -1,
+    ease: Expo.easeOut
 })
 .to("#main__overlay-white", {
     height: "100vh",
     duration: 2,
-    delay: -1.6,
-    ease: Expo.easeInOut
+    delay: -1,
+    ease: Expo.easeOut
 })
 .to(".child", {
     y: "0%",
-    duration: 2,
+    duration: 1.5,
+    delay: -1,
     ease: Expo.easeOut
 })
